@@ -1,4 +1,14 @@
 $(function () {
+$('.gnb .left').hover(function(e){
+    e.preventDefault()
+    $('.smenu').stop().slideUp()
+    $('.smenu').stop().slideToggle()
+    $('.gnb').addClass('hover')
+})
+$('.gnb .left').mouseleave(function(){
+    $('.gnb').removeClass('hover')
+})
+
     $('.mainVisual').YTPlayer({
         videoURL: 'https://youtu.be/SdAdcDa2xRA',
         containment: '.video', autoPlay: true, mute: true, startAt: 5, opacity: 1, showControls: false, playOnlyIfVisible: true,
