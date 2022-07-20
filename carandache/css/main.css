@@ -1,0 +1,62 @@
+/* *{border: 1px solid #f00;} */
+.Wrap { } 
+
+.container { display: flex; width: 1200px; margin: 0 auto; } 
+.inner { width: 1200px; margin: 0 auto; } 
+
+header { position: relative; } 
+header .logo { background: #da291c; padding: 30px 0 60px 0; width: 100%; } 
+header .logo h2 { width: 200px; margin: 0 auto; } 
+
+header .gnb { position: absolute; inset: auto auto -50% 50%; transform: translate(-50%, -30%); justify-content: center; line-height: 80px; background: #fff; border-radius: 10px; box-shadow: 0 0 3px #999; z-index: 999; } 
+
+header .gnb.on { position: fixed; inset: 0 auto auto 50%; transform: translateX(-50%); background: #da291c; color: #fff; border-radius: 0 0 10px 10px; } 
+
+header .gnb .left>li { position: relative;  } 
+header .left { display: flex; text-align: center; gap: 70px; } 
+header .right { display: flex; gap: 20px; padding: 0 0 0 70px; } 
+header .smenu { position: absolute; inset: 180px auto auto 50%; transform: translateX(-50%); justify-content: center; line-height: 1.5; font-size: 12px; background: #ff0; z-index: 999; border-radius: 10px; }
+header .smenu>ul {justify-content: center;}
+ 
+
+
+header .right i { font-size: 21px; vertical-align: middle; } 
+
+.mainVisual .video { height: calc(100vh - 140px); } 
+
+.mainSlider { padding: 200px 0; } 
+.mainSlider h2 { text-align: center; font-family: 'Poiret One', cursive; font-size: 40px; } 
+.mainSlider h2::after {content: ""; display: block; width: 100px; height: 1px; background: #da291c; margin: 20px auto;}
+.mainSlider p { margin: 0 0 30px 0; text-align: center; font-weight: 300; } 
+
+.slider figure { margin: 0 15px; width: 200px; height: 300px; }
+.slider .brand01 {background: url(../img/brand_img10.jpg) no-repeat center center/cover;}
+.slider .brand02 {background: url(../img/painting-336024_1920.jpg) no-repeat center center/cover; filter: grayscale(1);} 
+.slider .brand03 {background: url(../img/brand_img09.jpg) no-repeat center center/cover;}
+.slider .brand04 {background: url(../img/brand_img05.jpg) no-repeat center center/cover; }    
+
+.fixedBg .fixed { padding: 150px 0; background: url(../img/main_supporters.jpg) no-repeat center center/cover; background-attachment: fixed; color: #fff;}
+.fixedBg h2 {font-size: 31px; margin: 0 0 10px 0; font-weight: 500;}
+.fixedBg h2 strong { font-family: 'Poiret One', cursive; font-weight: 900;} 
+.fixedBg  p {font-size: 15px; font-weight: 300;}
+
+.product { padding: 100px 0; }
+.product .inner { position: relative; width: 1230px; } 
+.product .inner>ul{ display: flex; justify-content: center; margin: 0 0 30px 0; }
+.product .inner>ul>li~li {border-left: 1px solid #fff;}
+.product .inner>ul>li {padding: 5px 15px; background: #da291c; color: #fff; font-weight: 300;}
+.pSlider figure { margin: 0 15px; width: 300px; height: 250px; border: 1px solid #f00; }
+
+.pSlider { display: none;}
+.pSlider.on {display: block;}
+
+.color .c01 { background: url(../img/pablo120_1.jpg) no-repeat center center/cover;}
+.color .c02 { background: url(../img/neopastel96_1.jpg) no-repeat center center/cover;}
+.color .c03 { background: url(../img/studio_gouache_cake15_1.jpg) no-repeat center center/cover;}
+.color .c04 { background: url(../img/Luminance_portrait20_1.jpg) no-repeat center center/cover;}
+.color .c05 { background: url(../img/neocolor1_2_woodenbox_1.jpg) no-repeat center center/cover;}
+
+.pArrows {position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%); font-size: 41px;}
+
+.pArrows i:nth-child(1) { margin: 0 0 0 -650px;}
+
