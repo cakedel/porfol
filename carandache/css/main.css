@@ -16,7 +16,7 @@ header .gnb.hover::after { height: 100%; width: 100%; padding:0 0 150px 0; }
 header .gnb.on { position: fixed; inset: 0 auto auto 50%; transform: translateX(-50%); background: #da291c; color: #fff; border-radius: 0 0 10px 10px; } 
 header .gnb.on::after { background: #da291c; } 
 
-header .gnb .left>li { position: relative; } 
+header .gnb .left>li { position: relative; cursor: pointer;} 
 header .left { display: flex; gap: 70px; }
  
 header .right { display: flex; gap: 20px; padding: 0 0 0 70px; } 
@@ -36,12 +36,12 @@ header .right i { font-size: 21px; vertical-align: middle; }
 .mainSlider p { margin: 0 0 30px 0; text-align: center; font-weight: 300; opacity: 0; transition: 2.5s; } 
 .mainSlider p.on { margin: 0 0 30px 0; text-align: center; font-weight: 300; opacity: 1; } 
 
-.slider figure { margin: 0 15px; width: 200px; height: 300px; opacity: 0; } 
-.slider figure:nth-child(1) { transition: 1.5s; } 
-.slider figure:nth-child(2) { transition: 1.5s 0.5s; } 
-.slider figure:nth-child(3) { transition: 1.5s 1s; } 
-.slider figure:nth-child(4) { transition:1.5s 1.5s; } 
-.slider figure.on { transform: rotateY(180deg); opacity: 1; } 
+.slider figure { margin: 0 15px; width: 300px; height: 250px; opacity: 0; } 
+.slider figure:nth-child(1) { transition: 1.5s 0.5s ; } 
+.slider figure:nth-child(2) { transition: 1.5s 1s; } 
+.slider figure:nth-child(3) { transition: 1.5s 1.5s; } 
+.slider figure:nth-child(4) { transition:1.5s 2s; } 
+.slider figure.on { transform: rotateY(360deg); opacity: 1; } 
 .slider .brand01 { background: url(../img/brand_img10.jpg) no-repeat center center/cover; } 
 .slider .brand02 { background: url(../img/painting-336024_1920.jpg) no-repeat center center/cover; filter: grayscale(1); } 
 .slider .brand03 { background: url(../img/brand_img09.jpg) no-repeat center center/cover; } 
@@ -56,10 +56,12 @@ header .right i { font-size: 21px; vertical-align: middle; }
 .product .inner { width: 1230px; position: relative; overflow: hidden; }
 .product h2 { font-family: 'Poiret One', cursive; text-align: center; font-size: 41px; color: #da291c; margin: 0 0 50px 0;} 
 .product .inner>ul { display: flex; justify-content: center; margin: 0 0 50px 0; } 
-.product .inner>ul>li~li { border-left: 1px solid #fff; } 
-.product .tMenu li { width: 200px; padding: 7px 0; text-align: center; background: #f1f1f1; color: #000; font-weight: 300; cursor: pointer; } 
-.product .tMenu li.on { background: #da291c; color: #fff; } 
-.pSlider figure { width: 380px; height: 250px; margin: 0 0 30px 0; } 
+
+.product .tMenu li { position: relative; width: 200px; padding: 10px 0; text-align: center; border-bottom: 2px solid #f1f1f1; color: #ccc; font-size: 19px; font-weight: 500; cursor: pointer; }
+.product .tMenu li::after { position: absolute; inset: auto auto -2px 0; content: ""; display: block; width: 0; height: 2px;background: #f1f1f1; transition: 0.5s; } 
+.product .tMenu li.on::after{ width: 100%; background: #da291c}
+.product .tMenu li.on { color: #333;} 
+.pSlider figure { width: 380px; height: 500px; margin: 0 0 30px 0; } 
 .pSliderWrap { margin: 0 15px; overflow: hidden; } 
 .pSlider { display: none; } 
 .pSlider.on { display: block; } 

@@ -18,7 +18,7 @@ $(function () {
         centerMode: true,
         pauseOnHover: false,
         pauseOnFocus: false,
-        centerPadding: '700px',
+        centerPadding: '650px',
     });
     $(window).scroll(function () {
 
