@@ -2,15 +2,15 @@ $(function () {
     $('.gnb .left').hover(function (e) {
         e.preventDefault()
         $('.gnb').addClass('hover')
-        $('.smenu').stop().slideToggle()
+        $('.smenu').addClass('on')
     },
         () => {
             $('.gnb').removeClass('hover')
-            $('.smenu').stop().slideUp()
+            $('.smenu').removeClass('on')
         })
     $('.mainVisual').YTPlayer({
         videoURL: 'https://youtu.be/SdAdcDa2xRA',
-        containment: '.video', autoPlay: true, mute: true, startAt: 5, opacity: 1, showControls: false, playOnlyIfVisible: true,
+        containment: '.video', autoPlay: true, mute: true, startAt: 3, opacity: 1, showControls: false, playOnlyIfVisible: true,
     })
     $('.slider').slick({
         arrows: false,
@@ -18,31 +18,37 @@ $(function () {
         centerMode: true,
         pauseOnHover: false,
         pauseOnFocus: false,
-        centerPadding: '650px',
+        centerPadding: '700px',
     });
     $(window).scroll(function () {
 
         var sct = $(document).scrollTop()
 
-        if (sct > $('.mainSlider').offset().top) {
+        if (sct > $('.mainVisual').offset().top) {
             $('header .gnb').addClass('on');     
         }
         else {
             $('header .gnb').removeClass('on');       
         }
+
+        if (sct > $('.mainSlider').offset().top) {
+            $('header .gnb').addClass('down');     
+        }
+        else {
+            $('header .gnb').removeClass('down');       
+        }
+
         if (sct > $('.mainSlider').offset().top / 2) {
             $('.mainSlider span').addClass('on');
             $('.mainSlider h2').addClass('on');
             $('.mainSlider p').addClass('on');
             $('.mainSlider h2').addClass('on');
-            $('.mainSlider figure').addClass('on');
             $('.slider').slick('slickPlay');  
         }
         else {
             $('.mainSlider span').removeClass('on');
             $('.mainSlider h2').removeClass('on');
             $('.mainSlider p').removeClass('on');
-            $('.mainSlider figure').removeClass('on');
             $('.slider').slick('slickPause');  
         }
 

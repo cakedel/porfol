@@ -13,35 +13,37 @@ header .gnb::after { display: block; position: absolute; inset: 70px auto auto 0
 
 header .gnb.hover::after { height: 100%; width: 100%; padding:0 0 150px 0; } 
 
-header .gnb.on { position: fixed; inset: 0 auto auto 50%; transform: translateX(-50%); background: #da291c; color: #fff; border-radius: 0 0 10px 10px; } 
+header .gnb.on { position: fixed; inset: 0 auto auto 50%; transform: translate(-50%, -100%); background: #da291c; color: #fff; border-radius: 0 0 10px 10px; transition: 0.5s ease ;} 
 header .gnb.on::after { background: #da291c; } 
+header .gnb.down { transform: translate(-50%, 0); } 
 
-header .gnb .left>li { position: relative; cursor: pointer;} 
-header .left { display: flex; gap: 70px; }
+header .gnb .left>li { position: relative; cursor: pointer; } 
+header .left { display: flex; gap: 70px; } 
+
  
 header .right { display: flex; gap: 20px; padding: 0 0 0 70px; } 
-header .smenu { display: none; position: absolute; inset: 80px auto auto 50%; transform: translateX(-50%); line-height: 1.5; font-size: 12px; font-weight: 300; z-index: 999; border-radius: 10px; height: 100%; width: 100%; } 
+header .smenu { position: absolute; inset: 80px auto auto 50%; transform: translateX(-50%); line-height: 1.5; font-size: 12px; font-weight: 300; z-index: 999; border-radius: 10px; height: 100%; width: 100%; opacity: 0; } 
 
+header .left:hover li .smenu { opacity: 1; transition: 0.5s 0.1s; } 
 
 header .right i { font-size: 21px; vertical-align: middle; } 
 
 .mainVisual .video { height: calc(100vh - 140px); } 
 
-.mainSlider { padding: 200px 0; } 
+.mainSlider { padding: 170px 0; } 
 .mainSlider h2 { text-align: center; font-family: 'Poiret One', cursive; font-size: 41px; } 
 .mainSlider span { display: block; transform: translateY(-100px); opacity: 0; transition: 1.5s; } 
 .mainSlider span.on { transform: translateY(0); opacity: 1; } 
 .mainSlider h2::after { content: ""; display: block; width: 0; height: 1px; background: #da291c; margin: 20px auto; transition: 1.5s; } 
-.mainSlider h2.on::after { width: 100px; } 
-.mainSlider p { margin: 0 0 30px 0; text-align: center; font-weight: 300; opacity: 0; transition: 2.5s; } 
+.mainSlider h2.on::after { width: 150px; } 
+.mainSlider p { margin: 0 0 30px 0; text-align: center; font-weight: 300; opacity: 0; transition: 2s 0.5s; } 
 .mainSlider p.on { margin: 0 0 30px 0; text-align: center; font-weight: 300; opacity: 1; } 
 
-.slider figure { margin: 0 15px; width: 300px; height: 250px; opacity: 0; } 
-.slider figure:nth-child(1) { transition: 1.5s 0.5s ; } 
+.slider figure { margin: 0 15px; width: 150px; height: 300px; } 
+.slider figure:nth-child(1) { transition: 1.5s 0.5s; } 
 .slider figure:nth-child(2) { transition: 1.5s 1s; } 
 .slider figure:nth-child(3) { transition: 1.5s 1.5s; } 
 .slider figure:nth-child(4) { transition:1.5s 2s; } 
-.slider figure.on { transform: rotateY(360deg); opacity: 1; } 
 .slider .brand01 { background: url(../img/brand_img10.jpg) no-repeat center center/cover; } 
 .slider .brand02 { background: url(../img/painting-336024_1920.jpg) no-repeat center center/cover; filter: grayscale(1); } 
 .slider .brand03 { background: url(../img/brand_img09.jpg) no-repeat center center/cover; } 
@@ -53,22 +55,23 @@ header .right i { font-size: 21px; vertical-align: middle; }
 .fixedBg p { font-size: 15px; font-weight: 300; } 
 
 .product { padding: 100px 0; position: relative; } 
-.product .inner { width: 1230px; position: relative; overflow: hidden; }
-.product h2 { font-family: 'Poiret One', cursive; text-align: center; font-size: 41px; color: #da291c; margin: 0 0 50px 0;} 
+.product .inner { width: 1230px; position: relative; overflow: hidden; } 
+.product h2 { font-family: 'Poiret One', cursive; text-align: center; font-size: 43px; color: #da291c; margin: 0 0 50px 0; } 
 .product .inner>ul { display: flex; justify-content: center; margin: 0 0 50px 0; } 
 
-.product .tMenu li { position: relative; width: 200px; padding: 10px 0; text-align: center; border-bottom: 2px solid #f1f1f1; color: #ccc; font-size: 19px; font-weight: 500; cursor: pointer; }
-.product .tMenu li::after { position: absolute; inset: auto auto -2px 0; content: ""; display: block; width: 0; height: 2px;background: #f1f1f1; transition: 0.5s; } 
-.product .tMenu li.on::after{ width: 100%; background: #da291c}
-.product .tMenu li.on { color: #333;} 
-.pSlider figure { width: 380px; height: 500px; margin: 0 0 30px 0; } 
+.product .tMenu li { position: relative; width: 200px; padding: 10px 0; text-align: center; border-bottom: 2px solid #f1f1f1; color: #ccc; font-size: 17px; font-weight: 500; cursor: pointer; } 
+.product .tMenu li::after { position: absolute; inset: auto auto -2px 0; content: ""; display: block; width: 0; height: 2px; background: #f1f1f1; transition: 0.5s; } 
+.product .tMenu li.on::after { width: 100%; background: #da291c } 
+.product .tMenu li.on { color: #333; } 
+
+.pSlider figure { width: 380px; height: 400px; margin: 0 0 30px 0; } 
 .pSliderWrap { margin: 0 15px; overflow: hidden; } 
 .pSlider { display: none; } 
 .pSlider.on { display: block; } 
 
-.pSliderWrap h3 { font-size: 21px; font-weight: 500; margin: 0 0 10px 0; } 
-.pSliderWrap p { font-weight: 300; margin: 0 0 30px 0; } 
-.pSliderWrap strong { font-weight:700; font-size: 19px; } 
+.pSliderWrap h3 { font-size: 17px; font-weight: 500; margin: 0 0 10px 0; } 
+.pSliderWrap p { font-weight: 300; font-size: 15px; margin: 0 0 15px 0; } 
+.pSliderWrap strong { font-weight:500; font-size: 17px; color: #da291c; } 
 
 .color .c01 { background: url(../img/pablo120_1.jpg) no-repeat center center/cover; } 
 .color .c02 { background: url(../img/neopastel96_1.jpg) no-repeat center center/cover; } 
@@ -83,7 +86,10 @@ header .right i { font-size: 21px; vertical-align: middle; }
 .writing .w05 { background: url(../img/Converter_K9_1.jpg) no-repeat center center/cover; } 
 
 
-.pArrows { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%); font-size: 41px; z-index: 999; } 
+.pArrows { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%); font-size: 57px; z-index: 999; color: #999; padding: 5px; }
+
+.pArrows .left:hover  {color: #da291c; transition: 0.5s;}
+.pArrows .right:hover  {color: #da291c; transition: 0.5s;}
 
 .pArrows .left { transform: translateX(-650px); } 
 .pArrows .right { transform: translateX(650px); } 
