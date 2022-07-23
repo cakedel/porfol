@@ -24,18 +24,18 @@ $(function () {
 
         var sct = $(document).scrollTop()
 
-        if (sct > $('.mainVisual').offset().top) {
-            $('header .gnb').addClass('on');     
+        if (sct > $('.mainVisual').offset().top * 5) {
+            $('header .gnb').addClass('on');
         }
         else {
-            $('header .gnb').removeClass('on');       
+            $('header .gnb').removeClass('on');
         }
 
         if (sct > $('.mainSlider').offset().top) {
-            $('header .gnb').addClass('down');     
+            $('header .gnb').addClass('down');
         }
         else {
-            $('header .gnb').removeClass('down');       
+            $('header .gnb').removeClass('down');
         }
 
         if (sct > $('.mainSlider').offset().top / 2) {
@@ -43,13 +43,13 @@ $(function () {
             $('.mainSlider h2').addClass('on');
             $('.mainSlider p').addClass('on');
             $('.mainSlider h2').addClass('on');
-            $('.slider').slick('slickPlay');  
+            $('.slider').slick('slickPlay');
         }
         else {
             $('.mainSlider span').removeClass('on');
             $('.mainSlider h2').removeClass('on');
             $('.mainSlider p').removeClass('on');
-            $('.slider').slick('slickPause');  
+            $('.slider').slick('slickPause');
         }
 
     });

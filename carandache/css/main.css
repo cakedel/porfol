@@ -13,9 +13,9 @@ header .gnb::after { display: block; position: absolute; inset: 70px auto auto 0
 
 header .gnb.hover::after { height: 100%; width: 100%; padding:0 0 150px 0; } 
 
-header .gnb.on { position: fixed; inset: 0 auto auto 50%; transform: translate(-50%, -100%); background: #da291c; color: #fff; border-radius: 0 0 10px 10px; transition: 0.5s ease ;} 
+header .gnb.on { position: fixed; inset: 0 auto auto 50%; transform: translate(-50%, -100%); background: #da291c; color: #fff; border-radius: 0 0 10px 10px;; } 
 header .gnb.on::after { background: #da291c; } 
-header .gnb.down { transform: translate(-50%, 0); } 
+header .gnb.down { transform: translate(-50%, 0); transition: 0.5s ease } 
 
 header .gnb .left>li { position: relative; cursor: pointer; } 
 header .left { display: flex; gap: 70px; } 
@@ -86,10 +86,10 @@ header .right i { font-size: 21px; vertical-align: middle; }
 .writing .w05 { background: url(../img/Converter_K9_1.jpg) no-repeat center center/cover; } 
 
 
-.pArrows { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%); font-size: 57px; z-index: 999; color: #999; padding: 5px; }
+.pArrows { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%); font-size: 57px; z-index: 999; color: #999; padding: 5px; } 
 
-.pArrows .left:hover  {color: #da291c; transition: 0.5s;}
-.pArrows .right:hover  {color: #da291c; transition: 0.5s;}
+.pArrows .left:hover { color: #da291c; transition: 0.5s; } 
+.pArrows .right:hover { color: #da291c; transition: 0.5s; } 
 
 .pArrows .left { transform: translateX(-650px); } 
 .pArrows .right { transform: translateX(650px); } 
