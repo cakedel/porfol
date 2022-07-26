@@ -22,9 +22,9 @@ header .left { display: flex; gap: 70px; }
 
  
 header .right { display: flex; gap: 20px; padding: 0 0 0 70px; } 
-header .smenu { position: absolute; inset: 80px auto auto 50%; transform: translateX(-50%); line-height: 1.5; font-size: 12px; font-weight: 300; z-index: 999; border-radius: 10px; height: 100%; width: 100%; opacity: 0; } 
+header .smenu { position: absolute; inset: 80px auto auto 50%; transform: translateX(-50%); line-height: 1.5; font-size: 12px; font-weight: 300; z-index: 999; border-radius: 10px; height: 100%; width: 100%; visibility:hidden; } 
 
-header .left:hover li .smenu { opacity: 1; transition: 0.5s 0.1s; } 
+header .left:hover li .smenu { visibility: visible; transition: 1.5s 0.3s; } 
 
 header .right i { font-size: 21px; vertical-align: middle; } 
 
@@ -85,6 +85,12 @@ header .right i { font-size: 21px; vertical-align: middle; }
 .writing .w04 { background: url(../img/Ink_Bottles_1.jpg) no-repeat center center/cover; } 
 .writing .w05 { background: url(../img/Converter_K9_1.jpg) no-repeat center center/cover; } 
 
+.fWriting .f01 { background: url(../img/844MP_Classic_red_list.jpg) no-repeat center center/cover; } 
+.fWriting .f02 { background: url(../img/EcridorMP_Golf_list.jpg) no-repeat center center/cover; } 
+.fWriting .f03 { background: url(../img/Natura_list.jpg) no-repeat center center/cover; } 
+.fWriting .f04 { background: url(../img/844MP_Classic_red_list.jpg) no-repeat center center/cover; } 
+.fWriting .f05 { background: url(../img/EcridorMP_Golf_list.jpg) no-repeat center center/cover; } 
+.fWriting .f06 { background: url(../img/Natura_list.jpg) no-repeat center center/cover; } 
 
 .pArrows { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%); font-size: 57px; z-index: 999; color: #999; padding: 5px; } 
 
@@ -94,3 +100,17 @@ header .right i { font-size: 21px; vertical-align: middle; }
 .pArrows .left { transform: translateX(-650px); } 
 .pArrows .right { transform: translateX(650px); } 
 
+.footer { text-transform: uppercase; border-top: 1px solid #ddd; } 
+.footer .top { padding: 30px 0; background: #da291c; } 
+.footer .top .container { justify-content: space-between; } 
+.footer .top .menu { display: flex; gap: 30px; font-weight: 500;} 
+.sns { display: flex; gap: 5px; align-items: center; } 
+.sns i { font-size: 21px; }
+
+.footer .bottom { padding: 30px 0; justify-content: space-between; }
+.footer .bottom .left {flex: 5;}
+.footer .bottom h2 {width: 200px;}
+.footer .left .copy { font-size: 12px; font-weight: 300; } 
+
+.footer .menu {margin: 0 0 10px 0;}
+.footer .right {display: flex; flex: 7;}

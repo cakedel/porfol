@@ -1,6 +1,5 @@
 $(function () {
-    $('.gnb .left').hover(function (e) {
-        e.preventDefault()
+    $('.gnb .left').hover(function () {
         $('.gnb').addClass('hover')
         $('.smenu').addClass('on')
     },
