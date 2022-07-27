@@ -18,6 +18,17 @@ $(function () {
         pauseOnHover: false,
         pauseOnFocus: false,
         centerPadding: '700px',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    centerMode: false,
+                    centerPadding: '120px',
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
     $(window).scroll(function () {
 
@@ -67,7 +78,15 @@ $(function () {
     $('.pSlider').slick({
         slidesToShow: 3,
         arrows: false,
-
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 
     $('.pArrows .left').on('click', function () {
@@ -76,4 +95,15 @@ $(function () {
     $('.pArrows .right').on('click', function () {
         $('.pSlider').slick('slickNext');
     });
+    $('.mbtn i:nth-child(1)').on('click', function () {
+        $(this).addClass('on')
+        $('.mbtn i:nth-child(2)').addClass('on')
+        $('.gnb').addClass('res')
+    })
+    $('.mbtn i:nth-child(2)').on('click', function(){
+        $(this).removeClass('on')
+        $('.mbtn i:nth-child(1)').removeClass('on')
+        $('.gnb').removeClass('res')
+
+    })
 });
