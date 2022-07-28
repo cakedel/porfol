@@ -20,12 +20,10 @@ $(function () {
         centerPadding: '700px',
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 1000,
                 settings: {
                     centerMode: false,
-                    centerPadding: '120px',
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                    centerPadding: '0px',
                 }
             }
         ]
@@ -61,7 +59,10 @@ $(function () {
             $('.mainSlider p').removeClass('on');
             $('.slider').slick('slickPause');
         }
-
+        if ($(window).width() < 1000) {
+            $('.gnb').removeClass('on')
+            $('.gnb').removeClass('down')
+        }
     });
 
     $('.tMenu li').on('click', function (e) {
@@ -100,10 +101,16 @@ $(function () {
         $('.mbtn i:nth-child(2)').addClass('on')
         $('.gnb').addClass('res')
     })
-    $('.mbtn i:nth-child(2)').on('click', function(){
+
+    $('.mbtn i:nth-child(2)').on('click', function () {
         $(this).removeClass('on')
         $('.mbtn i:nth-child(1)').removeClass('on')
         $('.gnb').removeClass('res')
 
+    })
+    $('.gnb .left>li>a').on('click', function (e) {
+        e.preventDefault()
+        $(this).next().stop().slideToggle();
+        $(this).parent().siblings().children('ul').stop().slideUp();
     })
 });
