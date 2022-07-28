@@ -51,12 +51,15 @@ $(function () {
             $('.mainSlider h2').addClass('on');
             $('.mainSlider p').addClass('on');
             $('.mainSlider h2').addClass('on');
+            $('.slider figure').addClass('on')
             $('.slider').slick('slickPlay');
+            
         }
         else {
             $('.mainSlider span').removeClass('on');
             $('.mainSlider h2').removeClass('on');
             $('.mainSlider p').removeClass('on');
+            $('.slider figure').removeClass('on')
             $('.slider').slick('slickPause');
         }
         if ($(window).width() < 1000) {
