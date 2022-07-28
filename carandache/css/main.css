@@ -176,19 +176,19 @@ header .right i { font-size: 31px; vertical-align: middle; }
 .mainSlider p.on { margin: 0 0 30px 0; text-align: center; font-weight: 300; opacity: 1; } 
 
 .slider { overflow-x: hidden; } 
-.slider figure { width: auto; height: 300px; margin: 0px 0px; overflow-x: hidden; } 
+.slider figure { width: auto; height: 300px; margin: 0px 0px; overflow-x: hidden; }
 
-.fixedBg .fixed { padding: 150px 30px; background: url(../img/main_supporters.jpg) no-repeat center center/cover; background-attachment: fixed; color: #fff; } 
-.fixedBg h2 { font-size: 24px; margin: 0 0 10px 0; font-weight: 500; } 
+.fixedBg .fixed { padding: 150px 20px; background: url(../img/main_supporters.jpg) no-repeat center center/cover; background-attachment: fixed; color: #fff; } 
+.fixedBg h2 { font-size: 21px; margin: 0 0 10px 0; font-weight: 500; } 
 .fixedBg h2 strong { font-family: 'Poiret One', cursive; font-weight: 900; } 
-.fixedBg p { font-size: 15px; font-weight: 300; } 
+.fixedBg p { font-size: 13px; font-weight: 300; } 
 
 .product { padding: 100px 0; position: relative; } 
 .product .inner { width: auto; position: relative; overflow: hidden; } 
 .product h2 { font-family: 'Poiret One', cursive; text-align: center; font-size: 43px; color: #da291c; margin: 0 0 50px 0; } 
 .product .inner>ul { display: flex; justify-content: center; margin: 0 0 30px 0; } 
 
-.product .tMenu { padding: 0 30px; } 
+.product .tMenu { padding: 0 20px; } 
 .product .tMenu li { position: relative; width: 150px; padding: 10px 0; text-align: center; border-bottom: 2px solid #f1f1f1; color: #ccc; font-size: 13px; font-weight: 400; cursor: pointer; } 
 .product .tMenu li::after { position: absolute; inset: auto auto -2px 0; content: ""; display: block; width: 0; height: 2px; background: #f1f1f1; transition: 0.5s; } 
 .product .tMenu li.on::after { width: 100%; background: #da291c } 
@@ -202,19 +202,19 @@ header .right i { font-size: 31px; vertical-align: middle; }
 .pSliderWrap h3 { font-size: 17px; font-weight: 500; margin: 0 0 10px 0; } 
 .pSliderWrap p { font-weight: 300; font-size: 15px; margin: 0 0 15px 0; } 
 .pSliderWrap strong { font-weight:500; font-size: 17px; color: #da291c; } 
-.pExplain { padding: 0 0 0 15px; border-left: 2px solid #da291c; margin: 0 30px; } 
+.pExplain { margin: 0 20px; } 
 
-.pArrows { position: absolute; inset: 52% auto auto 50%; transform: translate(-50%, -50%); font-size: 47px; z-index: 999; color: #999; padding: 0px; } 
+.pArrows { position: absolute; inset: 52% auto auto 50%; transform: translate(-50%, -50%); font-size: 33px; z-index: 998; color: #999; padding: 0px; } 
 
 .pArrows .left:hover { color: #da291c; transition: 0.5s; } 
 .pArrows .right:hover { color: #da291c; transition: 0.5s; } 
 
-.pArrows .left { transform: translateX(-180px); } 
-.pArrows .right { transform: translateX(180px); } 
+.pArrows .left { transform: translateX(-150px); } 
+.pArrows .right { transform: translateX(150px); } 
 
 .footer { text-transform: uppercase; border-top: 1px solid #ddd; } 
 
-.footer .top { padding: 50px 30px; gap: 30px; } 
+.footer .top { padding: 50px 20px; gap: 30px; } 
 .footer .top .left { display: none; } 
 .footer .tmenu { display: flex; gap: 30px; } 
 .footer .tmenu h3 { margin: 0 0 10px 0; padding: 5px 0 0 0; font-weight: 700; } 
@@ -230,7 +230,7 @@ header .right i { font-size: 31px; vertical-align: middle; }
 
 
 .footer .bottom { padding: 20px 0; background: #da291c; color: #fff; } 
-.footer .bottom .inner { display: flex; flex-direction: column; justify-content: space-between; padding: 0 30px; } 
+.footer .bottom .inner { display: flex; flex-direction: column; justify-content: space-between; padding: 0 20px; } 
 .footer .bottom .menu { display: flex; flex-direction: column; font-size: 13px; font-weight: 300; vertical-align: middle; margin: 0 0 10px 0; } 
 .footer .bottom dd~dd::before { display: none; width: 1px; height: 7px; background: #f1f1f1; margin: 0 10px; } 
 .footer .bottom p { font-size: 12px; } 
