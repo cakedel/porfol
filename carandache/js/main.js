@@ -20,10 +20,11 @@ $(function () {
         centerPadding: '700px',
         responsive: [
             {
-                breakpoint: 1000,
+                breakpoint: 768,
                 settings: {
                     centerMode: false,
                     centerPadding: '0px',
+                    fade: true,
                 }
             }
         ]
@@ -53,7 +54,7 @@ $(function () {
             $('.mainSlider h2').addClass('on');
             $('.slider figure').addClass('on')
             $('.slider').slick('slickPlay');
-            
+
         }
         else {
             $('.mainSlider span').removeClass('on');
@@ -132,7 +133,6 @@ $(function () {
 
     })
     $(window).resize(function () {
-
         if ($(window).width() >= 1000) {
             $('.gnb .smenu').css('display', 'block')
         }
