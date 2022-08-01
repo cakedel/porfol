@@ -1,5 +1,5 @@
 $(function () {
-    $('.popSlider').slick({
+    $('.sumSlider').slick({
         slidesToShow: 4,
         arrows: false,
     })

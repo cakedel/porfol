@@ -1,31 +1,39 @@
-/* * { border: 1px solid #f00; } */
+/* * { border: 1px solid #f00; }  */
 .Wrap { } 
 .container { display: flex; width: 1200px; margin: 0 auto; } 
 .inner { width: 1200px; margin: 0 auto; } 
 
 .topBanner { padding: 20px 0; background: #f7f7f7; color: #666; } 
 .topBanner .inner { position: relative; text-align: center; } 
-.topBanner h2 { font-size: 22px; margin: 0 0 10px 0; } 
-.topBanner p { display: inline-block; font-size: 13px; } 
-.topBanner .member { position: absolute; inset: 0 40px auto auto; display: inline-block; padding: 3px 10px 5px 10px; font-size: 13px; font-weight: 300; border: 1px solid #999; } 
+.topBanner h2 { font-size: 21px; margin: 0 0 10px 0; } 
+.topBanner p { display: inline-block; font-size: 13px; font-weight: 300; } 
+.topBanner .member { position: absolute; inset: 0 40px auto auto; display: inline-block; padding: 5px 12px; font-size: 12px; font-weight: 300; border: 1px solid #999; } 
 .topBanner i { position: absolute; inset: 0 0 auto auto; padding: 3px; } 
 
 header h1 { font-size: 0; } 
 .gnb { gap: 50px; line-height: 120px; justify-content: space-between; font-size: 17px; } 
+.gnb>ul { display: flex; gap: 30px; }
 
-.gnb>ul { display: flex; gap: 30px; } 
 .mainVisual { background: #79ABD2; color: #fff; } 
 
-.mainVisual .mainContain { display: flex; position: relative; height: 600px; width: 81.58%; margin: 0 0 0 auto; } 
+.mainVisual .mainContain { display: flex; position: relative; height: 600px; width: calc(1200px + (100% - 1200px) / 2); margin: 0 0 0 auto; } 
 
-.mainContain .left { flex: 5; width: 100%; height: 100%; } 
+.mainContain .left { flex: 6; width: 100%; height: 100%;} 
 .mainContain .slogan { position: absolute; inset: 50% auto auto 0; transform: translateY(-50%); } 
-.mainContain h2 { font-size: 47px; margin: 0 0 10px 0; } 
+.mainContain h2 { font-size: 50px; margin: 0 0 10px 0; } 
 .mainContain p { font-size: 17px; font-weight: 300; } 
 
-.mainContain .right { flex: 6; height: 100%; width: 100%; background: #ff0; } 
+.mainContain .right { flex: 5; } 
 .mainContain figure { height: 100%; width: 100%; background: url(../img/23ac1c0123421d14c4bf5229377a2c28_33415.png) no-repeat center center/cover; } 
 
-.popular { padding: 100px 0; text-align: center; }
-.popular h2 { font-size: 47px; margin: 0 0 10px 0;}
-.popular p { font-size: 17px; font-weight: 300; margin: 0 0 30px 0;}
+.sumSale { position: relative; width: 1230px; margin: 0 auto; padding: 100px 0; text-align: center; }
+.sumSale img { border: 1px solid #ddd; margin: 0 0 30px 0;} 
+.sumSale h2 { font-size: 40px; margin: 0 0 10px 0; } 
+.sumSale p { font-size: 17px; font-weight: 300; margin: 0 0 50px 0; }
+
+.sumSlider figure { margin: 0 15px;}
+.sumSlider h3 { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 19px; font-weight: 400; margin: 0 0 10px 0;}
+
+.popArrows { position: absolute; inset: 52% auto auto 50%; transform: translate(-50%, -50%); font-size: 60px;}
+.popArrows i:nth-child(1) {transform: translateX(-620px);}
+.popArrows i:nth-child(2) {transform: translateX(620px);}
