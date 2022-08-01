@@ -51,7 +51,6 @@ $(function () {
             $('.mainSlider span').addClass('on');
             $('.mainSlider h2').addClass('on');
             $('.mainSlider p').addClass('on');
-            $('.mainSlider h2').addClass('on');
             $('.slider figure').addClass('on')
             $('.slider').slick('slickPlay');
 

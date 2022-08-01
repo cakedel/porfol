@@ -1,5 +1,5 @@
 /* * { border: 1px solid rgb(255, 179, 179); } */
-.Wrap { overflow-x: hidden;} 
+.Wrap { overflow-x: hidden; } 
 
 .container { display: flex; width: 1200px; margin: 0 auto; } 
 .inner { width: 1200px; margin: 0 auto; } 
@@ -15,6 +15,7 @@ header .gnb.hover::after { height: 100%; width: 100%; padding:0 0 150px 0; }
 
 header .gnb.on { position: fixed; inset: 0 auto auto 50%; transform: translate(-50%, -100%); background: #da291c; color: #fff; border-radius: 0 0 10px 10px; } 
 header .gnb.on::after { background: #da291c; } 
+header .gnb.on .smenu { color: #fff; } 
 header .gnb.down { transform: translate(-50%, 0); transition: 0.5s ease } 
 
 header .gnb .left>li { position: relative; cursor: pointer; } 
@@ -32,14 +33,14 @@ header .right i { font-size: 21px; vertical-align: middle; }
 
 .mainSlider { padding: 170px 0; } 
 .mainSlider h2 { text-align: center; font-family: 'Poiret One', cursive; font-size: 41px; } 
-.mainSlider span { display: block; transform: translateY(-100px); opacity: 0; transition: 1.5s; }
+.mainSlider span { display: block; transform: translateY(-100px); opacity: 0; transition: 1.5s; } 
 .mainSlider span.on { transform: translateY(0); opacity: 1; } 
 .mainSlider h2::after { content: ""; display: block; width: 0; height: 1px; background: #da291c; margin: 20px auto; transition: 1.5s; } 
 .mainSlider h2.on::after { width: 150px; } 
 .mainSlider p { margin: 0 0 30px 0; text-align: center; font-weight: 300; opacity: 0; transition: 2s 0.5s; } 
 .mainSlider p.on { margin: 0 0 30px 0; text-align: center; font-weight: 300; opacity: 1; } 
 
-.slider figure { margin: 0 0px; width: 0; height: 300px; opacity: 0; transition: 1s 0.5s; } 
+.slider figure { margin: 0 15px; width: 0; height: 300px; opacity: 0; transition: 1s 0.5s; } 
 
 .slider figure.on { width: auto; opacity: 1; transform: rotateY(180deg); } 
 
@@ -55,7 +56,7 @@ header .right i { font-size: 21px; vertical-align: middle; }
 
 .product { padding: 100px 0; position: relative; } 
 .product .inner { width: 1230px; position: relative; overflow: hidden; } 
-.product h2 { font-family: 'Poiret One', cursive; text-align: center; font-size: 43px; color: #da291c; margin: 0 0 5px 0; } 
+.product h2 { font-family: 'Poiret One', cursive; text-align: center; font-size: 43px; color: #da291c; margin: 0 0 50px 0; } 
 .product .inner>ul { display: flex; justify-content: center; margin: 0 0 50px 0; } 
 
 .product .tMenu li { position: relative; width: 200px; padding: 10px 0; text-align: center; border-bottom: 2px solid #f1f1f1; color: #ccc; font-size: 17px; font-weight: 500; cursor: pointer; } 
@@ -100,7 +101,7 @@ header .right i { font-size: 21px; vertical-align: middle; }
 .lEdition .l05 { background: url(../img/82f7b39d79e3ddf0caec1fdbb22fe71b.jpg) no-repeat center center/cover; } 
 .lEdition .l06 { background: url(../img/83f6b17d15ecd3ab6eef002182b11a53.jpg) no-repeat center center/cover; } 
 
-.pArrows { position: absolute; inset: 52% auto auto 50%; transform: translate(-50%, -50%); font-size: 57px; z-index: 999; color: #999; padding: 5px; } 
+.pArrows { position: absolute; inset: 52% auto auto 50%; transform: translate(-50%, -50%); font-size: 57px; z-index: 999; color: #999; padding: 5px; cursor: pointer; } 
 
 .pArrows .left:hover { color: #da291c; transition: 0.5s; } 
 .pArrows .right:hover { color: #da291c; transition: 0.5s; } 
@@ -111,16 +112,14 @@ header .right i { font-size: 21px; vertical-align: middle; }
 .footer { text-transform: uppercase; border-top: 1px solid #ddd; } 
 
 .footer .top { padding: 50px 0; gap: 200px; } 
-.footer .tmenu { display: flex; gap: 150px; } 
-.footer .tmenu h3 { margin: 0 0 10px 0; padding: 5px 0 0 0; font-weight: 700; } 
-.footer .tmenu dt::before { content: ""; display: block; width: 100px; height: 2px; background: #da291c; } 
 .footer .top h2 { width: 200px; } 
-.footer .top .left .copy { font-size: 12px; font-weight: 300; } 
 
 .footer h3 { font-weight: 500; } 
-.footer .top .right { display: flex; font-size: 19px; } 
+.footer .top .right { display: flex; gap: 150px; font-size: 19px; } 
 .footer .top .service { display: flex; gap: 150px; } 
-.footer .smenu { font-size: 15px; } 
+.footer .serMenu { font-size: 15px; } 
+.footer .top dt { font-weight: 500; margin: 0 0 10px 0; } 
+.footer .top dt::before { content: ""; display: block; width: 100px; height: 2px; background: #da291c; margin: 0 0 3px 0; } 
 .sns { display: flex; gap: 5px; } 
 .sns i { font-size: 21px; align-items: center; } 
 
@@ -131,7 +130,7 @@ header .right i { font-size: 21px; vertical-align: middle; }
 .footer .bottom dd~dd::before { content: ""; display: inline-block; width: 1px; height: 7px; background: #f1f1f1; margin: 0 10px; } 
 .footer .bottom p { font-size: 12px; } 
 
-.mbtn i { display: none; position: fixed; inset: 10px 10px auto auto; color: #fff; font-size: 15px; z-index: 1000; padding: 10px; background: rgba(0, 0, 0, 0.2); border-radius: 50%; cursor: pointer; } 
+.mbtn i { display: none; position: fixed; inset: 10px 10px auto auto; color: #fff; font-size: 17px; z-index: 1000; padding: 10px; background: rgba(0, 0, 0, 0.2); border-radius: 50%; cursor: pointer; } 
 
 @media (max-width:1000px){
  .container { display: flex; width: auto; margin: 0 auto; } 
@@ -141,7 +140,7 @@ header { position: static; overflow: hidden; }
 header .logo { background: #da291c; padding: 30px 0 30px 0; width: 100%; } 
 header .logo h1 { width: 200px; margin: 0 auto; font-size: 0; } 
 
-header .gnb { display:block; position: fixed; inset:0 auto auto 0; transform: translate(0, 0); line-height: 1; background: rgba(0, 0, 0, 0.8); width: 100%; height: 100%;  text-transform: uppercase; border-radius: 0px; font-size: 31px; font-weight: 500; z-index: 999; visibility: hidden; } 
+header .gnb { display:block; position: fixed; inset:0 auto auto 0; transform: translate(0, 0); line-height: 1; background: rgba(0, 0, 0, 0.8); width: 100%; height: 100%; text-transform: uppercase; border-radius: 0px; font-size: 31px; font-weight: 500; z-index: 999; visibility: hidden; } 
 header .gnb.on { display: none; position: static; inset: auto auto auto auto; transform: translate(0, 0); background: rgba(255, 255, 255, 0.5); color: #333; backdrop-filter: blur(10px); border-radius: 0 0 0 0; } 
 
 header .gnb::after { display: none; position: static; inset: 70px auto auto 0; content: ""; width: 1200px; height: 0; border-radius: 0 0 10px 10px; background: #fff; z-index: -999; transition: 0.5s; } 
@@ -164,29 +163,29 @@ header .left:hover li .smenu { visibility: visible; transition: 0s 0s; }
 
 header .right i { font-size: 31px; vertical-align: middle; } 
 
-.mainVisual .video { width: auto; height: 400px; } 
+.mainVisual .video { width: auto; height: calc(100vh - 100px); } 
 
-.mainSlider { padding: 170px 0; overflow-x: hidden; } 
+.mainSlider { padding: 100px 0; overflow-x: hidden; } 
 .mainSlider h2 { text-align: center; font-family: 'Poiret One', cursive; font-size: 31px; } 
-.mainSlider span { display: block; transform: translateY(-100px); opacity: 0; transition: 1.5s; } 
+.mainSlider span { display: block; transform: translateY(0); opacity: 1; transition: 1.5s; } 
 .mainSlider span.on { transform: translateY(0); opacity: 1; } 
-.mainSlider h2::after { content: ""; display: block; width: 0; height: 1px; background: #da291c; margin: 20px auto; transition: 1.5s; } 
+.mainSlider h2::after { content: ""; display: block; width: 150px; height: 1px; background: #da291c; margin: 20px auto; transition: 1.5s; } 
 .mainSlider h2.on::after { width: 150px; } 
-.mainSlider p { margin: 0 0 30px 0; text-align: center; font-size: 15px; font-weight: 300; opacity: 0; transition: 2s 0.5s; } 
+.mainSlider p { margin: 0 0 30px 0; text-align: center; font-size: 15px; font-weight: 300; opacity: 1; transition: 2s 0.5s; } 
 .mainSlider p.on { margin: 0 0 30px 0; text-align: center; font-weight: 300; opacity: 1; } 
 
 .slider { overflow-x: hidden; } 
-.slider figure { width: 0; height: 300px; margin: 0px 20px; overflow-x: hidden; } 
+.slider figure { width: auto; height: 300px; margin: 0px 20px; opacity: 1; } 
+.slider figure.on { width: auto; opacity: 1; transform: rotateY(0deg); } 
 
-
-.fixedBg .fixed { padding: 150px 20px; background: url(../img/main_supporters.jpg) no-repeat center center/cover; background-attachment: fixed; color: #fff; } 
+.fixedBg .fixed { padding: 100px 20px; background: url(../img/main_supporters.jpg) no-repeat center center/cover; background-attachment: fixed; color: #fff; } 
 .fixedBg h2 { font-size: 21px; margin: 0 0 10px 0; font-weight: 500; } 
 .fixedBg h2 strong { font-family: 'Poiret One', cursive; font-weight: 900; } 
 .fixedBg p { font-size: 15px; font-weight: 300; } 
 
 .product { padding: 100px 0; position: relative; } 
 .product .inner { width: auto; position: relative; overflow: hidden; } 
-.product h2 { font-family: 'Poiret One', cursive; text-align: center; font-size: 43px; color: #da291c; margin: 0 0 50px 0; } 
+.product h2 { font-family: 'Poiret One', cursive; text-align: center; font-size: 43px; color: #da291c; margin: 0 0 30px 0; } 
 .product .inner>ul { display: flex; justify-content: center; margin: 0 0 30px 0; } 
 
 .product .tMenu { padding: 0 20px; } 
@@ -206,7 +205,7 @@ header .right i { font-size: 31px; vertical-align: middle; }
 .pSliderWrap strong { font-weight:500; font-size: 17px; color: #da291c; } 
 .pExplain { margin: 0 20px; } 
 
-.pArrows { position: absolute; inset: 52% auto auto 50%; transform: translate(-50%, -50%); font-size: 33px; z-index: 998; color: #999; padding: 0px; } 
+.pArrows { position: absolute; inset: 52% auto auto 50%; transform: translate(-50%, -50%); font-size: 37px; z-index: 998; color: #999; padding: 0px; } 
 
 .pArrows .left:hover { color: #da291c; transition: 0.5s; } 
 .pArrows .right:hover { color: #da291c; transition: 0.5s; } 
@@ -218,10 +217,10 @@ header .right i { font-size: 31px; vertical-align: middle; }
 
 .footer .top { padding: 50px 20px; gap: 30px; } 
 .footer .top .left { display: none; } 
-.footer .top .right { display: flex; font-size: 19px; } 
+.footer .top .right { display: flex; font-size: 19px; gap: 0px; } 
 .footer .top .service { display: flex; flex-direction: column; gap: 30px; } 
-.footer .serMenu { font-size: 15px; }
-.footer .top .serMenu { margin: 0 0 10px 0; padding: 5px 0 0 0; font-weight: 700; } 
+.footer .serMenu { font-size: 15px; } 
+.footer .top .serMenu { margin: 0 0 10px 0; padding: 5px 0 0 0; } 
 .footer .top dt::before { content: ""; display: block; width: 100px; height: 2px; background: #da291c; } 
 
 .sns { display: flex; gap: 5px; } 
@@ -236,6 +235,3 @@ header .right i { font-size: 31px; vertical-align: middle; }
 .mbtn i:nth-child(1) { display: block; } 
 .mbtn i:nth-child(1).on { display: none; } 
 .mbtn i:nth-child(2).on { display: block; } 
- }
-
- 
