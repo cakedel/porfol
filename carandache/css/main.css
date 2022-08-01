@@ -109,7 +109,7 @@ header .right i { font-size: 21px; vertical-align: middle; }
 .pArrows .left { transform: translateX(-650px); } 
 .pArrows .right { transform: translateX(650px); } 
 
-.footer { text-transform: uppercase; border-top: 1px solid #ddd; } 
+.footer { text-transform: uppercase; border-top: 1px solid #ddd; filter: ; } 
 
 .footer .top { padding: 50px 0; gap: 200px; } 
 .footer .top h2 { width: 200px; } 
