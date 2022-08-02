@@ -5,6 +5,7 @@ $(function () {
     })
     $('.sumSlider').slick({
         slidesToShow: 4,
+        slidesToScroll :2,
         arrows: false,
     });
     $('.popArrows i:nth-child(1)').on('click', function () {
