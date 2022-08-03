@@ -15,6 +15,7 @@ $(function () {
         $('.sumSlider').slick('slickNext')
     });
     $('.tabMenu').slick({
+        infinite:true,
         arrows: false,
         autoplay: true,
         autoplaySpeed: 0,
@@ -24,4 +25,12 @@ $(function () {
         pauseOnHover: false,
         pauseOnFocus: false,
     })
+    $('.tabArrows i:nth-child(1)').on('click', function () {
+        $('.tabMenu').slick({
+            speed:10000,
+        })
+    });
+    $('.tabArrows i:nth-child(2)').on('click', function () {
+        $('.tabMenu').slick('slickNext')
+    });
 });

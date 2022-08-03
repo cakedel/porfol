@@ -1,16 +1,18 @@
-/* * { border: 1px solid #f00; }  */
+/* * { border: 1px solid #f00; } */
 .Wrap { } 
 .container { display: flex; width: 1170px; margin: 0 auto; } 
-.inner { width: 1170px; margin: 0 auto; }
+.inner { width: 1170px; margin: 0 auto; } 
 .pBottom { margin: 0 0 30px 0; } 
-.more { display: inline-block; padding: 10px 30px; border: 1px solid #f1f1f1; }
-strong {color: #0e2352; font-weight: 600;} 
-span{font-weight: 400;} 
+.more { display: inline-block; padding: 10px 30px; border: 1px solid rgba(255, 255, 255, 0.5); } 
+.name { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 19px; margin: 0 0 10px 0; } 
+.tmenu { font-size: 17px; } 
+strong { color: #0e2352; font-weight: 600; } 
+span { font-weight: 400; } 
 
 .topBanner { padding: 20px 0; background: #f7f7f7; color: #666; } 
 .topBanner .inner { position: relative; text-align: center; } 
 .topBanner h2 { display: inline-block; font-size: 20px; margin: 0 10px 10px 0; } 
-.topBanner .member {position: absolute; inset: 0 40px auto auto; display: inline-block; padding: 5px 12px; font-size: 12px; font-weight: 300; border: 1px solid #999; } 
+.topBanner .member { position: absolute; inset: 0 40px auto auto; display: inline-block; padding: 5px 12px; font-size: 12px; font-weight: 300; border: 1px solid #999; } 
 .topBanner i { position: absolute; inset: 0 0 auto auto; padding: 3px; } 
 
 .topHeader { line-height: 100px; } 
@@ -37,7 +39,7 @@ span{font-weight: 400;}
 .mainContain .left { flex: 8; width: 100%; height: 100%; } 
 .mainContain .slogan { position: absolute; inset: 50% auto auto 0; transform: translateY(-50%); } 
 .mainContain h2 { font-size: 52px; margin: 0 0 10px 0; } 
-.mainContain p { font-weight: 300; }
+.mainContain p { font-weight: 300; } 
 
 .mainContain .right { flex: 7; } 
 .mainContain figure { height: 100%; width: 100%; background: url(../img/23ac1c0123421d14c4bf5229377a2c28_33415.png) no-repeat center center/cover; } 
@@ -67,7 +69,6 @@ span{font-weight: 400;}
 .sumSale p { font-weight: 300; margin: 0 0 50px 0; } 
 
 .sumSlider figure { margin: 0 15px; } 
-.name { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 19px; margin: 0 0 10px 0; }
 .sumSlider del { display: inline-block; font-family: 'IBM Plex Sans KR', sans-serif; font-size: 15px; color: #999; } 
 
 .popArrows { position: absolute; inset: 45% auto auto 50%; transform: translate(-50%, -50%); font-size: 60px; color: #999; cursor: pointer; } 
@@ -85,13 +86,23 @@ span{font-weight: 400;}
 .explain .right { flex: 8; text-align: right; } 
 .explain .slogan { position: absolute; inset: 50% 0 auto auto; transform: translateY(-50%); } 
 .explain h2 { font-size: 52px; margin: 0 0 20px 0; } 
-.explain p { font-size: 17px; font-weight: 300; } 
-.explain i { vertical-align: middle; padding: 0 3px;}
+.explain p { font-weight: 300; } 
+.explain i { vertical-align: middle; padding: 0 3px; } 
 
 .product { padding: 100px 0; } 
-.tabMenu { margin: 0 auto 50px auto; }
-.tabMenu figure { text-align: center;}
-.tabMenu img { cursor: pointer; margin-left: 50px;} 
+.product h2 { text-align: center; font-size: 40px; margin: 0 0 50px 0; } 
+.tabMenu { margin: 0 auto 70px auto; } 
+.tabMenu figure { text-align: center; } 
+.tabMenu img { cursor: pointer; margin-left: 50px; } 
 
-.tabContent ul { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr); row-gap: 50px; column-gap: 30px;} 
-.tabContent .img { margin: 0 0 30px 0; border: 1px solid #f1f1f1;} 
+.tab {position: relative;}
+.tabArrows { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%,-50%); font-size: 40px; cursor: pointer; z-index: 999; } 
+.tabArrows i:nth-child(1) { transform: translateX(-600px);}
+.tabArrows i:nth-child(2) { transform: translateX(600px);}
+
+
+.tabContent ul { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr); row-gap: 50px; column-gap: 30px; } 
+.tabContent .img { margin: 0 0 30px 0; border: 1px solid #f1f1f1; } 
+
+.tabContent .content { display: none; } 
+.tabContent .content.on { display: block; } 
