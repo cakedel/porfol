@@ -5,7 +5,8 @@ $(function () {
     })
     $('.sumSlider').slick({
         slidesToShow: 4,
-        slidesToScroll: 2,
+        slidesToScroll: 4,
+        speed: 1000,
         arrows: false,
     });
     $('.popArrows i:nth-child(1)').on('click', function () {
@@ -14,23 +15,52 @@ $(function () {
     $('.popArrows i:nth-child(2)').on('click', function () {
         $('.sumSlider').slick('slickNext')
     });
+
     $('.tabMenu').slick({
-        infinite:true,
+        infinite: true,
         arrows: false,
         autoplay: true,
         autoplaySpeed: 0,
-        speed:5000,
+        speed: 5000,
         cssEase: 'linear',
-        slidesToShow: 5,
+        slidesToShow: 6,
         pauseOnHover: false,
         pauseOnFocus: false,
+        rtl: false,
+    });
+
+    $('.tabMenu li').on('click', function () {
+        var idx = $(this).index();
+        $('.contentWrap').removeClass('on')
+        $('.contentWrap').eq(idx - 13).addClass('on')
     })
-    $('.tabArrows i:nth-child(1)').on('click', function () {
-        $('.tabMenu').slick({
-            speed:10000,
-        })
+
+    $('.tabArrows i:nth-child(1)').on('mousedown', function () {
+        $('.tabMenu').slick('slickSetOption', 'speed', '300')
     });
-    $('.tabArrows i:nth-child(2)').on('click', function () {
-        $('.tabMenu').slick('slickNext')
+    $('.tabArrows i:nth-child(1)').on('mouseup', function () {
+
+        $('.tabMenu').slick('slickSetOption', 'speed', '5000')
     });
+    $('.tabArrows i:nth-child(2)').on('mousedown', function () {
+
+    });
+
+    $('.toTop').on('click', function () {
+        $(window).scrollTop();
+    })
+
+
+    $(window).scroll(function () {
+
+        var sct = $(window).scrollTop()
+
+        if (sct > $('.renai').offset().top) {
+            $('.toTop').fadeIn()
+        }
+        else {
+            $('.toTop').fadeOut()
+        }
+    })
+
 });
