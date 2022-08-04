@@ -31,6 +31,7 @@ $(function () {
 
     $('.tabMenu li').on('click', function () {
         var idx = $(this).index();
+        console.log(idx)
         $('.contentWrap').removeClass('on')
         $('.contentWrap').eq(idx - 13).addClass('on')
     })
@@ -43,12 +44,13 @@ $(function () {
         $('.tabMenu').slick('slickSetOption', 'speed', '5000')
     });
     $('.tabArrows i:nth-child(2)').on('mousedown', function () {
-
+        $('.tabMenu').slick('slickNext')
+        $('.tabMenu').slick('slickSetOption', 'speed', '5000')
     });
 
     $('.toTop').on('click', function () {
-        $(window).scrollTop();
-    })
+        scrollTo({top:0, left:0, behavior:'smooth'});
+    });
 
 
     $(window).scroll(function () {
