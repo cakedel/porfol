@@ -19,17 +19,21 @@ $(function () {
 
     $('.tabMenu').slick({
         arrows: false,
-        slidesToShow: 6,
+        slidesToShow: 5,
+        centerMode: true,
+        infinite: true,
+        asNavFor: '.tabContent',
     });
+    $('.tabMenu').on('afterChange', function (s, e, c, n) {
+        $('.slick-active').removeClass('on')
+        $('.slick-current').addClass('on')
+    })
 
-    $('.tabMenu li').on('click', function () {
-        var idx = $(this).index();
-        console.log(idx)
-        $('.tabMenu li').removeClass('on')
-        $(this).addClass('on')
 
-        $('.contentWrap').removeClass('on')
-        $('.contentWrap').eq(idx - 13).addClass('on')
+    $('.tabContent').slick({
+        arrows: false,
+        speed: 0,
+        swipe: false,
     });
 
     $('.tabArrows i:nth-child(1)').on('click', function () {
@@ -49,8 +53,6 @@ $(function () {
     $(window).scroll(function () {
 
         var sct = $(window).scrollTop()
-
-        console.log(sct)
 
         if (sct > $('.renai').offset().top) {
             $('.toTop').fadeIn()
