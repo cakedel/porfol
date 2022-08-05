@@ -25,9 +25,12 @@ $(function () {
     $('.tabMenu li').on('click', function () {
         var idx = $(this).index();
         console.log(idx)
+        $('.tabMenu li').removeClass('on')
+        $(this).addClass('on')
+
         $('.contentWrap').removeClass('on')
         $('.contentWrap').eq(idx - 13).addClass('on')
-    })
+    });
 
     $('.tabArrows i:nth-child(1)').on('click', function () {
         $('.tabMenu').slick('slickPrev')
@@ -42,7 +45,7 @@ $(function () {
     });
 
     $('.toTop').hide()
-    
+
     $(window).scroll(function () {
 
         var sct = $(window).scrollTop()
