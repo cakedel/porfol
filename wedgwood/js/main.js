@@ -9,6 +9,7 @@ $(function () {
         speed: 1000,
         arrows: false,
     });
+
     $('.popArrows i:nth-child(1)').on('click', function () {
         $('.sumSlider').slick('slickPrev')
     });
@@ -17,16 +18,8 @@ $(function () {
     });
 
     $('.tabMenu').slick({
-        infinite: true,
         arrows: false,
-        autoplay: true,
-        autoplaySpeed: 0,
-        speed: 5000,
-        cssEase: 'linear',
         slidesToShow: 6,
-        pauseOnHover: false,
-        pauseOnFocus: false,
-        rtl: false,
     });
 
     $('.tabMenu li').on('click', function () {
@@ -36,26 +29,25 @@ $(function () {
         $('.contentWrap').eq(idx - 13).addClass('on')
     })
 
-    $('.tabArrows i:nth-child(1)').on('mousedown', function () {
-        $('.tabMenu').slick('slickSetOption', 'speed', '300')
+    $('.tabArrows i:nth-child(1)').on('click', function () {
+        $('.tabMenu').slick('slickPrev')
     });
-    $('.tabArrows i:nth-child(1)').on('mouseup', function () {
 
-        $('.tabMenu').slick('slickSetOption', 'speed', '5000')
-    });
-    $('.tabArrows i:nth-child(2)').on('mousedown', function () {
+    $('.tabArrows i:nth-child(2)').on('click', function () {
         $('.tabMenu').slick('slickNext')
-        $('.tabMenu').slick('slickSetOption', 'speed', '5000')
     });
 
     $('.toTop').on('click', function () {
-        scrollTo({top:0, left:0, behavior:'smooth'});
+        scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     });
 
-
+    $('.toTop').hide()
+    
     $(window).scroll(function () {
 
         var sct = $(window).scrollTop()
+
+        console.log(sct)
 
         if (sct > $('.renai').offset().top) {
             $('.toTop').fadeIn()
@@ -63,6 +55,7 @@ $(function () {
         else {
             $('.toTop').fadeOut()
         }
-    })
+
+    });
 
 });

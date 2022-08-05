@@ -1,8 +1,11 @@
 /* * { border: 1px solid #f00; } */
-:root { --mc : #5A739C; } 
+ 
 .Wrap { } 
+:root { --mc : #5A739C; }
+
 .container { display: flex; width: 1170px; margin: 0 auto; } 
 .inner { width: 1170px; margin: 0 auto; } 
+
 .pBottom { margin: 0 0 30px 0; } 
 .more { display: inline-block; padding: 10px 30px; border: 1px solid rgba(255, 255, 255, 0.5); } 
 .name { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 19px; margin: 0 0 10px 0; } 
@@ -10,7 +13,7 @@
 strong { color: #0e2352; font-weight: 600; } 
 span { font-weight: 400; } 
 
-.topBanner { padding: 20px 0; background: #f7f7f7; color: #666; cursor: pointer; } 
+.topBanner { padding: 20px 0; background: #f7f7f7; color: #666; } 
 .topBanner .inner { position: relative; text-align: center; } 
 .topBanner h2 { display: inline-block; font-size: 20px; margin: 0 10px 10px 0; }
 .topBanner h2::after {content: "\eb36"; display: inline-block; font-family: xeicon; vertical-align: middle; margin: 0 0 0 10px;} 
@@ -96,12 +99,12 @@ span { font-weight: 400; }
 .product h2 { text-align: center; font-size: 40px; margin: 0 0 50px 0; } 
 .tabMenu { margin: 0 auto 70px auto; } 
 .tabMenu figure { text-align: center; } 
-.tabMenu img { cursor: pointer; margin-left: 50px; } 
+.tabMenu img { cursor: pointer; margin-left: 30px; } 
 
 .tab { position: relative; } 
 .tabArrows i { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%,-50%); font-size: 40px; cursor: pointer; z-index: 999; } 
-.tabArrows i:nth-child(1) { margin: 0 0 0 -620px; } 
-.tabArrows i:nth-child(2) { margin: 0 0 0 620px; } 
+.tabArrows i:nth-child(1) { margin: 0 0 0 -600px; } 
+.tabArrows i:nth-child(2) { margin: 0 0 0 600px; } 
 
  
 .tabContent { position: relative; } 
@@ -112,7 +115,9 @@ span { font-weight: 400; }
 
 .tabContent .img { margin: 0 0 20px 0; border: 1px solid #f1f1f1; } 
 
-.toTop {position: fixed; inset: auto 50px 50px auto; font-size: 40px; color: #fff; background: rgba(0, 0, 0, 0.3); padding: 10px; border-radius: 50%; cursor: pointer; }
+.toTop { position: fixed; inset: auto 50px 50px auto; font-size: 40px; color: #fff; background: rgba(0, 0, 0, 0.3); padding: 10px; border-radius: 50%; cursor: pointer; }
+
+
 
 footer { padding: 40px 0; background: var(--mc); color: #ddd; font-size: 13px; } 
 footer .container { justify-content: space-between; } 
