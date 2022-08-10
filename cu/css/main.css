@@ -19,8 +19,8 @@
 .mainSlider figure { margin: 0 15px; } 
 .mainSlider img { border-radius: 50px; } 
 .arrows i { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%); font-size: 40px; background: #f8f8f8; border-radius: 50%; padding: 10px; opacity: 0.7; box-shadow: 2px 2px 6px rgba(0,0,0, 0.2); cursor: pointer; } 
-.arrows i:nth-child(1) { margin: 0 0 0 -430px; } 
-.arrows i:nth-child(2) { margin: 0 0 0 430px; } 
+.arrows i:nth-child(1) { margin: 0 0 0 -19%; } 
+.arrows i:nth-child(2) { margin: 0 0 0 19%; } 
 
 .slick-dots { position: absolute; inset: auto auto 30px 50%; transform: translateX(-50%); display: flex; gap: 10px; } 
 .slick-dots li { display:inline-block; margin: 0 3px; width: 12px; height: 12px; border-radius: 50%; background: rgb(180, 180, 180); font-size: 0; } 
@@ -28,7 +28,7 @@
 .slick-dots .slick-active { background: #37d243; }
 
 .product {padding: 100px 0; font-family: 'Noto Sans KR', sans-serif; text-align: center;}
-.product h2 { display: inline-block; margin: 0 0 50px 0; font-size: 35px; font-weight: 500; background: #6837f8; border-radius: 50px; color: #fff; padding: 10px 30px;}
+.product h2 { display: inline-block; margin: 0 0 50px 0; font-size: 35px; font-weight: 500; background: #6837f8; border-radius: 50px; color: #fff; padding: 15px 30px;}
 .product strong { font-size: 18px; margin: 0 0 10px 0;}
 .product .price { font-size: 19px; font-weight: 700; }
 .product span { font-family: 'Noto Sans KR', sans-serif; font-weight: 600; }
