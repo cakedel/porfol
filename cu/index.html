@@ -30,11 +30,14 @@
                 </nav>
                 <div class="right">
                     <form action="javascript:search()" class="searchForm">
-                        <input type="text" name="search" placeholder="검색어를 입력해주세요">
+                        <input type="text" name="search" placeholder="상품명을 입력하세요">
                         <button><i class="xi-search"></i></button>
                     </form>
                     <a href="" class="login"><i class="xi-user"></i></a>
                 </div>
+            </div>
+            <div class="mbtn">
+                <i class="xi-bars"></i>
             </div>
         </header>
         <!-- 22.08.08 jiwon header end } -->
@@ -131,26 +134,26 @@
                         <div class="price">3,200<span>원</span></div>
                     </figure>
                 </div>
+                <div class="arrows">
+                    <i class="xi-angle-left"></i>
+                    <i class="xi-angle-right"></i>
+                </div>
             </section>
             <!-- 22.08.10 jiwon product end } -->
             <!--{ 22.08.10 jiwon brand start -->
             <section class="brand">
-                <div class="inbox">
+                <div class="container">
                     <div class="slogan">
-                        <div class="boxTop">
-                            <h2>언제 어디서나 만나면 반가운 브랜드,<br>
+                        <div class="contentTop">
+                            <h2>만나면 반가운 브랜드,<br>
                                 CU가 고객의 하루를 함께합니다</h2>
-                            <p>매일매일 신선함으로 가득 차는 CU는 재치 있는 상품으로 하루를 충전하세요</p>
                         </div>
-                        <div class="boxBottom">
-                            <figure><img src="./img/refresh01.jpg" alt="">
-                            <p>Fresh한 쇼핑공간</p>
-                            </figure>
-                            <figure><img src="./img/refresh02.jpg" alt="">
-                            <p>환하고 깨끗한 인테리어</p></figure>
-                            <figure><img src="./img/refresh03.jpg" alt="">
-                            <p>사람 중심의 편의점</p>
-                            </figure>
+                        <div class="contentBottom">
+                            <strong>우리 동네 매장을 찾아보세요</strong>
+                            <form action="javascript:search()" class="searchForm">
+                                <input type="text" name="search" placeholder="점포명 또는 OO동을 입력해보세요.">
+                                <button><i class="xi-search"></i></button>
+                            </form>
                         </div>
                     </div>
                     <div class="store">
@@ -159,9 +162,72 @@
                 </div>
             </section>
             <!-- 22.08.11 jiwon brand end } -->
+            <!-- 22.08.18 jiwon request start } -->
+            <section class="request">
+                <div class="container">
+                    <div class="left">
+                        <a href="">
+                            <h2>창업안내</h2>
+                            <p>점주님들의 성공을<br />
+                                최우선으로 생각합니다</p>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <a href="">
+                            <h2>고객센터</h2>
+                            <p>상품문의, 창업상담 무엇을<br />
+                                도와드릴까요?</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- 22.08.18 jiwon request end } -->
         </main>
+        <!-- 22.08.18 jiwon main end -->
+        <!-- 22.08.18 jiwon footer start -->
         <footer class="footer">
-
+            <div class="container">
+                <div class="left">
+                    <h2><img src="./img/footer_logo.png" alt=""></h2>
+                    <ul>
+                        <li>BGF리테일 서울시 강남구 테헤란로 405(삼성동)</li>
+                        <li>COPYRIGHT &copy; BGFretail ALL RIGHT RESERVED.</li>
+                        <li>TEL: 1577-8007</li>
+                    </ul>
+                    <ul class="sns">
+                        <li><i class="xi-facebook"></i></li>
+                        <li><i class="xi-twitter"></i></li>
+                        <li><i class="xi-instagram"></i></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <dl class="menu">
+                        <dt>Quick Menu</dt>
+                        <dd class="smenu">
+                            <ul>
+                                <li><a href="">거래상담</a></li>
+                                <li><a href="">매장찾기</a></li>
+                                <li><a href="">전자세금 계산서</a></li>
+                                <li><a href="">발주 및 배송데이터</a></li>
+                                <li><a href="">점주인증</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu">
+                        <dt>Family Site</dt>
+                        <dd class="smenu">
+                            <ul>
+                                <li><a href="">BGF</a></li>
+                                <li><a href="">BGF리테일</a></li>
+                                <li><a href="">포켓CU</a></li>
+                                <li><a href="">BGF네트웍스</a></li>
+                                <li><a href="">BGF휴먼넷</a></li>
+                                <li><a href="">BGF로지스</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
         </footer>
     </div>
     <script src="./js/jquery-1.12.4.min.js"></script>

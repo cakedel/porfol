@@ -234,4 +234,5 @@ header .right i { font-size: 31px; vertical-align: middle; }
 
 .mbtn i:nth-child(1) { display: block; } 
 .mbtn i:nth-child(1).on { display: none; } 
-.mbtn i:nth-child(2).on { display: block; } 
+.mbtn i:nth-child(2).on { display: block; }
+} 
