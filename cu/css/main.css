@@ -41,7 +41,7 @@ header .login i { font-size: 27px; }
 .proGrid img:hover { transform: scale(1.1); } 
 .proGrid span { font-weight: 400; } 
 
-.product .arrows { display: none;}
+.product .arrows i { display: none;}
 
 
 .brand { padding: 100px 0; } 
@@ -82,7 +82,7 @@ header .login i { font-size: 27px; }
 .footer .right .smenu { flex-direction: column; gap: 0px; color: #333; font-size: 15px; font-weight: 400; color: #666; } 
 
 
-.mbtn { display: none; position:fixed; inset:20px 20px auto auto; font-size: 25px; line-height: 1; cursor: pointer; z-index: 999; background: rgba(0,0,0, 0.2); color: #fff; padding: 10px; border-radius: 20px; } 
+.mbtn { display: none; position:fixed; inset:20px 20px auto auto; font-size: 25px; line-height: 1; cursor: pointer; z-index: 999; background: rgba(0,0,0, 0.2); color: #fff; padding: 10px; border-radius: 15px; } 
 
 @media (max-width:768px){
  .Wrap { } 
@@ -127,12 +127,13 @@ header .login i { font-size: 27px; }
 .proGrid { display:block; grid-template-rows: repeat(0, 0fr); grid-template-columns: repeat(0, 0fr); grid-row-gap: 0px; grid-column-gap: 0px; width: auto; } 
 .proGrid figure { width: auto; } 
 .proGrid .img { overflow: hidden; border: 1px solid #ddd; border-radius: 20px; margin: 0 0 20px 0; text-align: center; } 
-.proGrid img { transition: 0.5s; margin: 0 auto; } 
+.proGrid img { transition: 0.5s; margin: 0 auto; width: 80%; } 
 .proGrid img:hover { transform: scale(1); } 
 .proGrid span { font-weight: 400; } 
 
-.product .arrows i { display: block;}
-
+.product .arrows i { display: block; position: absolute; inset: auto auto 100px 50%; transform: translateX(-50%); font-size: 30px; cursor: pointer;}
+.product .arrows i:nth-child(1) {margin: 0 0 0 -40vw;}
+.product .arrows i:nth-child(2) {margin: 0 0 0 40vw;}
 
 .brand { padding: 0 20px 0 20px; text-align: center; } 
 .brand .container { flex-direction: column; gap: 70px; } 
@@ -140,11 +141,10 @@ header .login i { font-size: 27px; }
 .brand .slogan .content { vertical-align: middle; } 
 .brand .store { flex: 1; } 
 .brand .store img { width: 80%; } 
-.brand .contentTop { margin: 0 0 30px 0; } 
-.brand .contentTop h2 { font-size: 20px; line-height: 1.2; } 
-.brand p { font-size: 18px; font-weight: 300; } 
+.brand .contentTop { margin: 0 0 10px 0; } 
+.brand .contentTop h2 { font-size: 23px; line-height: 1.2; }
 
-.contentBottom strong { display: block; font-size: 17px; font-weight: 700; margin: 0 0 30px 0; } 
+.contentBottom strong { display: block; font-size: 17px; font-weight: 700; margin: 0 0 40px 0; } 
 .brand input::placeholder { color: #b4b4b4; } 
 .brand .searchForm input { border: none; border-bottom: 2px solid #333; width: 80%; font-size: 17px; } 
 .brand .searchForm button { border: none; background: transparent; font-size: 20px; cursor: pointer; } 

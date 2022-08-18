@@ -16,10 +16,10 @@ $(function () {
             }
         ]
     })
-    $('.arrows i:nth-child(1)').on('click', function () {
+    $('.mainVisual .arrows i:nth-child(1)').on('click', function () {
         $('.mainSlider').slick('slickPrev')
     })
-    $('.arrows i:nth-child(2)').on('click', function () {
+    $('.mainVisual .arrows i:nth-child(2)').on('click', function () {
         $('.mainSlider').slick('slickNext')
     })
     if ($(window).width() < 1000) {
@@ -27,18 +27,24 @@ $(function () {
             arrows: false,
         })
     }
-        $(window).resize(function () {
-            if ($(window).width() > 1000) {
-                $('.proGrid').slick('unslick')
-            }
-            else {
-                $('.proGrid').slick({
-                    arrows: false,
-                })
-            }
-        })
+    $(window).resize(function () {
+        if ($(window).width() > 1000) {
+            $('.proGrid').slick('unslick')
+        }
+        else {
+            $('.proGrid').slick({
+                arrows: false,
+            })
+        }
+    })
+    $('.product .arrows i:nth-child(1)').on('click', function () {
+        $('.proGrid').slick('slickPrev')
+    })
+    $('.product .arrows i:nth-child(2)').on('click', function () {
+        $('.proGrid').slick('slickNext')
+    })
     $('.mbtn').on('click', function () {
-        $(this).toggleClass('on')
         $('.gnb').toggleClass('on')
     })
+    
 });
