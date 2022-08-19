@@ -27,12 +27,26 @@ $(function () {
             arrows: false,
         })
     }
+    if ($(window).width() < 1000) {
+        $('.story .container').slick({
+            arrows: false,
+            fade: true,
+        })
+    }
     $(window).resize(function () {
         if ($(window).width() > 1000) {
             $('.proGrid').slick('unslick')
         }
         else {
             $('.proGrid').slick({
+                arrows: false,
+            })
+        }
+        if ($(window).width() > 1000) {
+            $('.story .container').slick('unslick')
+        }
+        else {
+            $('.story .container').slick({
                 arrows: false,
             })
         }
@@ -43,8 +57,14 @@ $(function () {
     $('.product .arrows i:nth-child(2)').on('click', function () {
         $('.proGrid').slick('slickNext')
     })
+    $('.story .arrows i:nth-child(1)').on('click', function () {
+        $('.story .container').slick('slickPrev')
+    })
+    $('.story .arrows i:nth-child(2)').on('click', function () {
+        $('.story .container').slick('slickNext')
+    })
     $('.mbtn').on('click', function () {
         $('.gnb').toggleClass('on')
     })
-    
+
 });
