@@ -3,6 +3,7 @@
 
 .container { display: flex; width: 1170px; margin: 0 auto; } 
 .inner { width: 1170px; margin: 0 auto; } 
+.discover { font-family: 'Red Hat Display', sans-serif; } 
 
 header { line-height: 100px; } 
 header .container { justify-content: space-between; border-bottom: 2px solid #999; } 
@@ -13,7 +14,7 @@ header .icon { display: flex; gap:10px; }
 header .icon a { display: block; font-size: 25px; } 
 
 .mainVisual .top { padding: 50px 0; } 
-.mainVisual .top h2 { font-family: 'Noto Sans KR', sans-serif; font-size: 35px; font-weight: 500; line-height: 1.45; } 
+.mainVisual .top h2 { font-size: 35px; font-weight: 500; line-height: 1.45; } 
 .mainVisual .bottom { position: relative; padding: 250px 0; background: url(../img/nature.jpg) no-repeat center center/cover; } 
 .mainVisual .bottom .inner { position: absolute; bottom: -5%; left: 50%; transform: translateX(-50%); } 
 .mainVisual .bottom p { font-family: 'Red Hat Display', sans-serif; font-size: 89px; font-weight: 300; color: #fff; } 
@@ -24,41 +25,97 @@ header .icon a { display: block; font-size: 25px; }
 .nature .inbox { padding: 100px 0; } 
 .nature .top { justify-content: space-between; margin: 0 0 70px 0; } 
 .nature .top .inbox { text-align: right; } 
-.nature .top h2 { font-family: 'Noto Sans KR', sans-serif; font-size: 30px; font-weight: 500; margin: 0 0 30px 0; } 
+.nature .top h2 { font-size: 30px; font-weight: 500; margin: 0 0 30px 0; } 
 .nature .top h2::after { content: ""; display: block; background: #666; height: 2px; width: 70px; margin: 20px 0 auto auto; } 
 .nature .top p { font-size: 17px; } 
 
 
 .nature .bottom { justify-content: space-between; } 
 .nature .bottom figure { width: calc((100% - 70px) / 2);; background: url(../img/history_img-01.png) no-repeat center center/cover; } 
-.nature .bottom h2 { font-family: 'Noto Sans KR', sans-serif; font-size: 30px; font-weight: 500; margin: 0 0 30px 0; } 
+.nature .bottom h2 { font-size: 30px; font-weight: 500; margin: 0 0 30px 0; } 
 .nature .bottom h2::after { content: ""; display: block; background: #666; height: 2px; width: 70px; margin: 20px auto auto 0; } 
 .nature .bottom p { font-size: 18px; } 
 
 .product { padding: 100px 0; background: #000; } 
-.product .rightBox { width: calc(1170px + (100% - 1170px) / 2); margin: auto 0 auto auto; display: flex; gap: 100px; }
-.product .left {display: flex; flex-direction: column; gap: 50px;} 
-.product .left h2 { font-size: 40px; font-weight: 300; color: #fff; margin: 0 0 30px 0; }
+.product .rightBox { width: calc(1170px + (100% - 1170px) / 2); margin: auto 0 auto auto; display: flex; gap: 100px; } 
+.product .left { display: flex; flex-direction: column; gap: 50px; } 
+.product .left h2 { font-family: 'Red Hat Display', sans-serif; font-size: 40px; font-weight: 300; color: #fff; margin: 0 0 30px 0; } 
 
-.product .inbox { padding: 30px 20px; background: #fff; height: 30%;}
-.product .inbox strong { display: block; font-size: 20px; font-weight: 500; margin: 0 0 20px 0;}
-.product .inbox .discover {display: inline-block; }
-.product .inbox i {vertical-align: middle;}
+.product .inbox { padding: 30px 20px; background: #fff; height: 30%; } 
+.product .inbox strong { display: block; font-size: 20px; font-weight: 500; margin: 0 0 20px 0; } 
+.product .inbox .discover { display: inline-block; } 
+.product .inbox i { vertical-align: middle; } 
 
-.product .swiper {position: relative;}
+.product .swiper { position: relative; } 
 
-.product .arrows i { color: #fff; font-size: 40px;}
+.product .arrows i { color: #fff; font-size: 40px; } 
 
-.product .img { height: 70%;}
+.product .img { height: 70%; } 
 
-.product .itm01 {background: url(../img/paper05.jpg) no-repeat center center/cover;}
-.product .itm02 {background: url(../img/paper04.jpg) no-repeat center center/cover;}
-.product .itm03 {background: url(../img/paper03.jpg) no-repeat center center/cover;}
-.product .itm04 {background: url(../img/paper08.jpg) no-repeat center center/cover;}
-.product .itm05 {background: url(../img/paper07.jpg) no-repeat center center/cover;}
-.product .itm06 {background: url(../img/paper06.jpg) no-repeat center center/cover;}
-.product .itm07 {background: url(../img/paper09.jpg) no-repeat center center/cover;}
+.product .itm01 { background: url(../img/paper05.jpg) no-repeat center center/cover; } 
+.product .itm02 { background: url(../img/paper04.jpg) no-repeat center center/cover; } 
+.product .itm03 { background: url(../img/paper03.jpg) no-repeat center center/cover; } 
+.product .itm04 { background: url(../img/paper08.jpg) no-repeat center center/cover; } 
+.product .itm05 { background: url(../img/paper07.jpg) no-repeat center center/cover; } 
+.product .itm06 { background: url(../img/paper06.jpg) no-repeat center center/cover; } 
+.product .itm07 { background: url(../img/paper09.jpg) no-repeat center center/cover; } 
 
-.product .arrows {color: #fff;}
-.product .swiper-pagination-progressbar-fill { background: #ddd;}
-.product .swiper-pagination-progressbar {position: absolute; bottom: 10%;}
+.product .arrows { color: #fff; } 
+.product .swiper-pagination-progressbar-fill { background: #ddd; } 
+.product .swiper-pagination-progressbar { position: absolute; bottom: 10%; } 
+
+
+.floor { padding: 100px 0; } 
+.floor .floorWrapper { width: calc(1170px + (100% - 1170px) / 2 ); margin: auto 0 auto auto; } 
+.floor h2 { font-size: 35px; font-weight: 500; } 
+.floor h2::after { content: ""; display: block; background: #666; width: 70px; height: 2px; margin: 20px 0; } 
+.floor .tit { font-size: 25px; font-weight: 100; margin: 0 0 30px 0; } 
+
+
+.floor h3 { font-family: 'Red Hat Display', sans-serif; font-size: 90px; font-weight: 700; margin: 0 0 10px 0; } 
+
+.floor .itm01 { width: 40%; height: 100%; background: url(../img/floor01.jpg) no-repeat center center/cover; } 
+.floor .itm02 { background: url(../img/floor02.jpg) no-repeat center center/cover; } 
+.floor .itm03 { background: url(../img/floor03.jpg) no-repeat center center/cover; } 
+.floor .itm04 { background: url(../img/floor04.jpg) no-repeat center center/cover; } 
+.floor .itm05 { background: url(../img/floor05.jpg) no-repeat center center/cover; } 
+
+
+
+.service { padding: 100px 0; background: linear-gradient( #000 70%, #fff 30%); } 
+.service .top { color: #fff; } 
+.service .top h2 { font-size: 35px; font-weight: 500; } 
+.service .top h2::after { content: ""; display: block; background: #ddd; width: 70px; height: 2px; margin: 20px 0 10px 0; } 
+.service .top p { margin: 0 0 50px 0; font-weight: 300; } 
+
+.service .bottom { display: flex; gap: 30px; } 
+.service .inbox { background: #fff; width:100%; } 
+.service figure { padding: 50px; box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1); } 
+.service figure img { width: 70px; margin: 0 0 50px 0; } 
+.service figure p { font-weight: 500; font-size: 20px; margin: 0 0 30px; } 
+
+.eco { padding: 100px 0; } 
+.eco h2 { font-family: 'Red Hat Display', sans-serif; font-size: 40px; font-weight: 400; text-align: center; margin: 0 0 50px 0; } 
+.eco .container { gap: 30px; } 
+.eco .container img { margin: 0 0 30px 0; } 
+.eco h3 { font-size: 24px; font-weight: 500; text-align: center; } 
+
+.propaper { padding: 100px 0; background: url(../img/bg.png) no-repeat center center/cover; color: #fff; } 
+.propaper .container { gap: 30px; justify-content: space-between; } 
+.propaper h2 { font-family: 'Red Hat Display', sans-serif; font-size: 30px; font-weight: 100; margin: 0 0 30px 0; } 
+.propaper .left { flex: 5; } 
+.propaper .left p { font-size: 17px; font-weight: 300; } 
+.propaper .left .pTop { margin: 0 0 20px 0; } 
+.propaper .left .pBottom { margin: 0 0 50px 0; } 
+.propaper .left strong { font-size: 20px; font-weight: 500; } 
+
+.propaper .right { display: flex; gap: 30px; flex: 7; } 
+.propaper .right a { display: block; width: 100%; height: 100%; background: #000; flex: 1; } 
+.propaper .inbox { padding: 50px 50px; text-align: center; } 
+.propaper .inbox h3 { font-family: 'Red Hat Display', sans-serif; font-size: 30px; font-weight: 100; } 
+.propaper .inbox h3::after { content: ""; display: block; width: 50px; height: 1px; background: #ddd; margin: 10px auto; } 
+.propaper .right a { display: block; } 
+
+footer { padding: 50px 0; background: #000; color: #fff; } 
+footer .top { justify-content: space-between; padding-bottom: 30px; border-bottom: 1px solid #666; } 
+footer .fMenu { display: flex; gap: 40px; font-family: 'Red Hat Display', sans-serif; font-size: 20px; font-weight: 100; } 
