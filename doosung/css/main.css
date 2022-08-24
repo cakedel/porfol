@@ -3,10 +3,12 @@
 
 .container { display: flex; width: 1170px; margin: 0 auto; } 
 .inner { width: 1170px; margin: 0 auto; } 
-.discover { font-family: 'Red Hat Display', sans-serif; } 
+.discover { font-family: 'Red Hat Display', sans-serif; }
+.discover i {vertical-align: middle;}
 
 header { line-height: 100px; } 
 header .container { justify-content: space-between; border-bottom: 2px solid #999; } 
+header h1 { font-size: 0; } 
 
 .gnb>ul { display: flex; gap: 40px; font-family: 'Red Hat Display', sans-serif; font-weight: 500; } 
 
@@ -42,9 +44,7 @@ header .icon a { display: block; font-size: 25px; }
 .product .left h2 { font-family: 'Red Hat Display', sans-serif; font-size: 40px; font-weight: 300; color: #fff; margin: 0 0 30px 0; } 
 
 .product .inbox { padding: 30px 20px; background: #fff; height: 30%; } 
-.product .inbox strong { display: block; font-size: 20px; font-weight: 500; margin: 0 0 20px 0; } 
-.product .inbox .discover { display: inline-block; } 
-.product .inbox i { vertical-align: middle; } 
+.product .inbox strong { display: block; font-size: 20px; font-weight: 500; margin: 0 0 20px 0; }
 
 .product .swiper { position: relative; } 
 
@@ -90,11 +90,11 @@ header .icon a { display: block; font-size: 25px; }
 
 .service .bottom { display: flex; gap: 30px; } 
 .service .inbox { background: #fff; width:100%; } 
-.service figure { padding: 50px; box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1); } 
-.service figure img { width: 70px; margin: 0 0 50px 0; } 
-.service figure p { font-weight: 500; font-size: 20px; margin: 0 0 30px; } 
+.service .menu { padding: 50px; box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1); } 
+.service .menu img { width: 70px; margin: 0 0 50px 0; } 
+.service .menu p { font-weight: 500; font-size: 20px; margin: 0 0 30px; } 
 
-.eco { padding: 100px 0; } 
+.eco { padding: 50px 0 150px 0; } 
 .eco h2 { font-family: 'Red Hat Display', sans-serif; font-size: 40px; font-weight: 400; text-align: center; margin: 0 0 50px 0; } 
 .eco .container { gap: 30px; } 
 .eco .container img { margin: 0 0 30px 0; } 
@@ -105,7 +105,7 @@ header .icon a { display: block; font-size: 25px; }
 .propaper h2 { font-family: 'Red Hat Display', sans-serif; font-size: 30px; font-weight: 100; margin: 0 0 30px 0; } 
 .propaper .left { flex: 5; } 
 .propaper .left p { font-size: 17px; font-weight: 300; } 
-.propaper .left .pTop { margin: 0 0 20px 0; } 
+.propaper .left .pTop { margin: 0 0 10px 0; } 
 .propaper .left .pBottom { margin: 0 0 50px 0; } 
 .propaper .left strong { font-size: 20px; font-weight: 500; } 
 
@@ -116,6 +116,16 @@ header .icon a { display: block; font-size: 25px; }
 .propaper .inbox h3::after { content: ""; display: block; width: 50px; height: 1px; background: #ddd; margin: 10px auto; } 
 .propaper .right a { display: block; } 
 
-footer { padding: 50px 0; background: #000; color: #fff; } 
-footer .top { justify-content: space-between; padding-bottom: 30px; border-bottom: 1px solid #666; } 
-footer .fMenu { display: flex; gap: 40px; font-family: 'Red Hat Display', sans-serif; font-size: 20px; font-weight: 100; } 
+footer {padding: 40px 0; background: #000; color: #fff; } 
+footer .top { justify-content: space-between; line-height: 120px; border-bottom: 1px solid #999; } 
+footer .fMenu { display: flex; gap: 40px; font-family: 'Red Hat Display', sans-serif; font-size: 20px; font-weight: 100; }
+footer .middle {padding-top: 50px; border-bottom: 1px solid #999;}
+footer .address {display: flex; margin: 0 0 50px 0;}
+footer .address dt {font-size: 20px; font-weight: 500; flex: 2;}
+footer .info {flex: 8;}
+footer .number {display: flex; color: #999; gap: 10px; line-height: 1.45; }
+footer address {display: block;color: #999;}
+
+footer .bottom {padding-top: 30px; color: #777; font-size: 14px;}
+footer .bottom ul {display: flex; gap: 10px; margin: 0 0 10px 0;}
+footer .bottom li~li::before {content: ""; display: inline-block; width: 1px; height: 11px; background: #555; margin: 0 5px;}
