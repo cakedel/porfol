@@ -8,11 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         scrollbar: {
             el: '.productScroll',
+            draggable: true,
         },
     });
     const floorExplain = new Swiper('.floorExplain', {
         slidesPerView: 1,
-        loop : true,
+        loop: true,
         effect: 'fade',
         navigation: {
             nextEl: '.floorNext',
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const floorSlider = new Swiper('.floorSlider', {
         slidesPerView: 3,
         spaceBetween: 30,
-        loop : true,
+        loop: true,
         navigation: {
             nextEl: '.floorNext',
             prevEl: '.floorPrev',
@@ -30,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     const floorImage = new Swiper('.floorImage', {
         slidesPerView: 1,
-        loop : true,
+        loop: true,
         effect: 'fade',
         navigation: {
             nextEl: '.floorNext',
