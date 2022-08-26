@@ -18,8 +18,8 @@ header .icon a { display: block; font-size: 25px; }
 .mainVisual .top { padding: 50px 0; } 
 .mainVisual .top h2 { font-size: 35px; font-weight: 500; line-height: 1.45; } 
 .mainVisual .bottom { position: relative; padding: 250px 0; background: url(../img/nature.jpg) no-repeat center center/cover; } 
-.mainVisual .bottom .inner { position: absolute; bottom: -5%; left: 50%; transform: translateX(-50%); } 
-.mainVisual .bottom p { font-family: 'Red Hat Display', sans-serif; font-size: 89px; font-weight: 300; color: #fff; } 
+.mainVisual .bottom .inner { position: absolute; bottom: -5.5%; left: 50%; transform: translateX(-50%); } 
+.mainVisual .bottom p { font-family: 'Red Hat Display', sans-serif; font-size: 98px; font-weight: 900; color: #fff; text-align: center; } 
 
 .nature { padding: 100px 0; } 
 .nature .container { gap: 70px; } 
