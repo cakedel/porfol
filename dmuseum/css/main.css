@@ -167,10 +167,10 @@ header .searchBox {
 }
 
 .whatsOn h2::after {
-    vertical-align: middle;
     content: "";
     display: inline-block;
-    width: 600px;
+    vertical-align: middle;
+    width: 670px;
     margin: auto 0 auto 40px;
     height: 1px;
     background: #444;
@@ -200,9 +200,10 @@ header .searchBox {
 }
 
 .whatsOn .wrapper .inner h3 {
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 700;
-    margin: 0 0 100px 0;
+    margin: 0 0 50px 0;
+    height: 120px;
     line-height: 1.45;
     text-shadow: 0 0 3px #000;
 }
@@ -232,13 +233,9 @@ header .searchBox {
     position: absolute;
     top: 50%;
     right: 0;
-    width: 1200px;
+    width: 1000px;
     transform: translateY(-50%);
     z-index: 1;
-}
-
-.whatsOn .whatSlider .swiper-wrapper {
-    min-width: 0;
 }
 
 .whatsOn .wrapper .arrows {
@@ -272,12 +269,12 @@ header .searchBox {
 }
 
 .shop h2::before {
+    content: '';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: -200%;
-    display: block;
-    content: "";
+    display: inline-block;    
     height: 1px;
     width: 400px;
     background: #111;
@@ -290,8 +287,165 @@ header .searchBox {
     font-size: 18px;
 }
 
-.shop .right>ul {
+.shop .tabMenu>ul>li {
+    color: #ddd;
+}
+
+.shop .tabMenu>ul>li.on {
+    color: #333;
+}
+
+.shop .tabMenu>ul>li {
+    cursor: pointer;
+}
+
+.shop .right .tabContent {
+    display: none;
+    margin: 0 0 50px 0;
+
+}
+
+.shop .right .tabContent.on {
+    display: block;
+}
+
+.shop .tabContent>ul {
     display: flex;
     gap: 30px;
 
+}
+
+.shop .right img {
+    margin: 0 0 10px 0;
+}
+
+.shop .right .detail {
+    font-size: 17px;
+}
+
+.shop .right .shopping {
+    text-align: center;
+}
+
+.shop .right a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 15px;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+.shop .right a:hover {
+    border: 1px solid #111;
+    background: #111;
+    color: #fff;
+}
+
+.ticket .bookTicket {    
+    position: fixed;    
+    bottom: 300px;
+    right: 100px;
+    width: 195px;
+    z-index: 999; 
+}
+
+.ticket .joinTicket {
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    width: 195px;
+    z-index: 999;    
+}
+
+.ticket:hover .joinTicket {
+    animation: updown 1s infinite;
+}
+
+
+.ticket:hover .bookTicket {
+    animation: rotate 1s infinite;
+
+}
+
+@keyframes updown {
+    100% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-20px); 
+    }
+    0% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+    0% {
+        transform: trotate(0deg);
+    }
+}
+
+.footer {
+    background: #111;
+    color: #fff;
+}
+
+.footer .container {
+    justify-content: space-between;
+}
+
+.footer .top {
+    padding:50px 0;
+    border-bottom: 1px solid #333;
+}
+
+.footer .top h2 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.45;
+}
+
+.footer .top strong {
+    font-size: 15px;
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+.footer .top p {
+    color: #666;
+    font-size: 13px;
+}
+
+.footer .top dl {
+    display: flex;
+    gap: 100px;
+}
+
+.footer .ftMenu .sns {
+    margin: 0 0 10px 0;
+}
+
+.footer .ftMenu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer .bottom {
+    padding: 50px 0;
+}
+
+.footer .bottom ul {
+    display: flex;
+    gap: 20px;
 }
