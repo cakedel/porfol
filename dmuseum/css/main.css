@@ -243,7 +243,16 @@ header .searchBox {
     bottom: 5%;
     right: 40%;
     font-size: 30px;
-    color: #999;
+    color: #444;
+}
+
+.whatsOn .wrapper .arrows i {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.whatsOn .wrapper .arrows i:nth-child(1) {
+    margin: 0 0 0 60px;
 }
 
 .whatsOn .num {
@@ -272,7 +281,6 @@ header .searchBox {
     content: '';
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     left: -200%;
     display: inline-block;    
     height: 1px;
@@ -288,7 +296,11 @@ header .searchBox {
 }
 
 .shop .tabMenu>ul>li {
-    color: #ddd;
+    color: #999;
+}
+
+.shop .tabMenu>ul>li i {
+    vertical-align: middle;
 }
 
 .shop .tabMenu>ul>li.on {
@@ -408,7 +420,7 @@ header .searchBox {
 }
 
 .footer .top h2 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 300;
     line-height: 1.45;
 }
@@ -417,6 +429,7 @@ header .searchBox {
     font-size: 15px;
     display: block;
     margin: 0 0 10px 0;
+    font-weight: 700;
 }
 
 .footer .top p {
@@ -427,25 +440,42 @@ header .searchBox {
 .footer .top dl {
     display: flex;
     gap: 100px;
+    color: #999;
 }
 
 .footer .ftMenu .sns {
     margin: 0 0 10px 0;
+    display: flex;
+    gap: 5px;
+}
+
+.footer .ftMenu .sns a {
+    font-size: 20px;
+    display: block;
 }
 
 .footer .ftMenu ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    font-size: 14px;
+    gap: 5px;
+    font-size: 13px;
     color: #666;
 }
 
 .footer .bottom {
     padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+    color: #999;
 }
 
 .footer .bottom ul {
     display: flex;
     gap: 20px;
+}
+
+.footer .bottom strong {
+    color: #fff;
 }
