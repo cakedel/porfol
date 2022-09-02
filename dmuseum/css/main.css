@@ -15,9 +15,30 @@ header {
     left: 0;
     color: #f9f9f9;
     width: 100%;
-    z-index: 1;
+    z-index: 999;
 }
 
+header h1 a {
+    display: block;
+    background: url(../img/logo.svg) no-repeat center center/cover;
+    width: 50px;
+    height: 50px;
+}
+
+header.on .bottom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    color: #333;
+    border-bottom: 1px solid #ddd;  
+}
+
+header.on h1 a {
+    display: block;
+    background: url(../img/logo_black.svg) no-repeat center center/cover;
+}
 
 header .top .subMenu {    
     display: flex;
@@ -43,8 +64,10 @@ header .gnb>ul {
 }
 
 header .searchBox {
-    display: block;
+    display: flex;
+    gap: 10px;
     font-size: 30px;
+
 }
 
 .mainVisual {
@@ -157,6 +180,7 @@ header .searchBox {
 }
 
 .whatsOn {
+    position: relative;
     padding: 100px 0;
 }
 
@@ -179,7 +203,7 @@ header .searchBox {
 .whatsOn .wrapper {
     position: relative;
     background: linear-gradient(to right, #111 50%, #fff 50%);
-    height: 600px;
+    height: 550px;
 }
 
 .whatsOn .wrapper .inner {
@@ -232,15 +256,16 @@ header .searchBox {
 .whatsOn .whatSlider {
     position: absolute;
     top: 50%;
-    right: 0;
-    width: 1000px;
     transform: translateY(-50%);
-    z-index: 1;
-}
+    right: 0;
+    width: 1120px;
+    margin: auto 0 auto auto;
+ }
+
 
 .whatsOn .wrapper .arrows {
     position: absolute;
-    bottom: 5%;
+    bottom: 3%;
     right: 40%;
     font-size: 30px;
     color: #444;
@@ -257,7 +282,7 @@ header .searchBox {
 
 .whatsOn .num {
     display: inline-block;
-    font-size: 17px;
+    font-size: 15px;
     vertical-align: middle;
 }
 
@@ -466,7 +491,7 @@ header .searchBox {
     padding: 50px 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     font-size: 13px;
     color: #999;
 }
@@ -478,4 +503,12 @@ header .searchBox {
 
 .footer .bottom strong {
     color: #fff;
+}
+
+.footer .bottom .personal {
+    margin: 0 0 10px 0;
+}
+
+.footer .bottom .email {
+    margin: 0 0 10px 0;
 }
